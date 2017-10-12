@@ -1,0 +1,130 @@
+ /*----------- GENERAL--------------- */
+
+body{
+	background-color: #f1f1f1;
+	margin: 0;
+	padding: 0;
+}
+
+a:hover{
+	text-decoration: none;
+}
+
+
+/*--------------- NAV---------------- */
+
+nav{
+	background-color: #061339;
+	min-height: 70px;
+	margin: 0 0;
+}
+
+h1{
+	color: #FFF;
+    margin: 0;
+	padding-top: 15px;
+	font-family: 'Merienda', cursive;
+}
+
+h1 a{
+	margin-top: 30px;
+	color: #fff;
+	font-size: 30px;
+}
+/*--------------- HEADER--------------- */
+
+.bandeau{
+    height: 170px;
+	min-width: 480px;
+	color: #fff;
+	background-color: #B9CDFF;
+	background-image: url(../img/background.jpg);
+	background-image: no-repeat;
+	margin: 0;
+	width: 100%;
+}
+
+.bandeau h2{
+    font-size: 35px;
+    line-height: 150px;
+	font-family: 'Merienda', cursive;
+	text-align: center;
+	text-shadow: 2px 2px 2px black;
+}
+
+/*------------- SECTION---------------- */
+
+/*Carousel*/
+#myCarousel{
+	margin-top: 40px;
+}
+
+.carousel-caption p{
+	font-weight: bold;
+	font-size: 30px;
+}
+
+/*Formulaire*/
+form{
+	margin-top: 40px;
+	border: 1px solid lightgrey;
+	border-radius: 5px;
+	
+}
+
+.form-horizontal .form-group{
+	margin: 10px;
+}
+
+h3{
+	color: #2F4073;
+	font-family: 'Merienda', cursive;
+	font-size: 20px;
+	margin-top: 50px;
+	text-align: center;
+}
+
+
+/*---Partie inférieure de la section---*/
+#description{
+	width: 100%;
+	background-color: #dddddd;
+	margin-top: 40px;
+}
+
+/*Partie article*/
+#description h2{
+	color: #2F4073;
+	font-family: 'Merienda', cursive;
+	font-size: 30px;
+	margin-bottom: 20px;
+
+}
+
+/*Tête du chat, changement de couleur au survol*/
+#teteChat img{
+	background-color: #7885A5;
+}
+
+#description:hover #teteChat img{
+	background-color: #061339;
+	transition: 1.1s;
+}
+
+/*FOOTER*/
+
+footer{
+	background-color: #061339;
+	color: #cccac7;
+	height: 30px;
+	text-align: right;
+	
+}
+
+/*MEDIA QUERIES*/
+@media only screen and (max-width : 465px){
+	.bandeau h2 {
+		font-size: 1.7em;
+		padding-right: 70px;
+	}
+}

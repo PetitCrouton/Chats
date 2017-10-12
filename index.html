@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <!-- Encodage des Caractères de la Page -->
+    <meta charset="UTF-8">
+
+    <!-- Affichage du site sans zoom, initialisé à 100% -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Pour IE, s'assurer qu'il utilise la dernière version de son moteur de rendu  -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Styles CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <!-- FontAwesome -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Merienda" rel="stylesheet">
+
+    <!-- html5Shiv.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" integrity="sha256-3Jy/GbSLrg0o9y5Z5n1uw0qxZECH7C6OQpVBgNFYa0g=" crossorigin="anonymous"></script>
+
+    <!-- Respond.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js" integrity="sha256-g6iAfvZp+nDQ2TdTR/VVKJf3bGro4ub5fvWSWVRi2NE=" crossorigin="anonymous"></script>
+
+    <!-- Le Titre de la Page -->
+    <title>EVALUATION Géraldine GABAS "Oh My Cats!"</title>
+</head>
+
+<body>
+    <!-- --------------------------------------------------------------
+                     Nav
+    ---------------------------------------------------------------- -->
+    <nav>
+        <h1 class="container"><a href="index.html">OhMyCats !</a></h1>
+    </nav>
+    <!-- --------------------------------------------------------------
+                     Header
+    ---------------------------------------------------------------- -->
+    <header class="bandeau">
+        <div class="container">
+            <h2>Adoptez un chat trop bon !</h2>
+        </div>
+    </header>
+
+    <!-- --------------------------------------------------------------
+                     Section
+    ---------------------------------------------------------------- -->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-9 col-sm-push-3">
+
+                    <!--Caroussel-->
+                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#myCarousel" data-slide-to="1"></li>
+                            <li data-target="#myCarousel" data-slide-to="2"></li>
+                            <li data-target="#myCarousel" data-slide-to="3"></li>
+                            <li data-target="#myCarousel" data-slide-to="4"></li>
+                        </ol>
+
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner">
+                            <div class="item active">
+                            <img src="assets/img/chat_1.jpg" alt="Sushi">
+                            <div class="carousel-caption">
+                                <p>Sushi</p>
+                            </div>
+                            </div>
+
+                            <div class="item">
+                            <img src="assets/img/chat_2.jpg" alt="Maki">
+                            <div class="carousel-caption">
+                                <p>Maki</p>
+                            </div>
+                            </div>
+
+                            <div class="item">
+                            <img src="assets/img/chat_3.jpg" alt="Sashimi">
+                            <div class="carousel-caption">
+                                <p>Sashimi</p>
+                            </div>
+                            </div>
+
+                            <div class="item">
+                            <img src="assets/img/chat_4.jpg" alt="Yakitori">
+                            <div class="carousel-caption">
+                                <p>Yakitori</p>
+                            </div>
+                            </div>
+
+                            <div class="item">
+                            <img src="assets/img/chat_5.jpg" alt="Onigri">
+                            <div class="carousel-caption">
+                                <p>Onigri</p>
+                            </div>
+                            </div>
+                        </div>
+
+                        <!-- Left and right controls -->
+                        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                            <span class="sr-only">Précédent</span>
+                        </a>
+                        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                            <span class="sr-only">Suivant</span>
+                        </a>
+
+                    </div><!--/#carousel-->
+                </div><!--/.col-sm-9-->
+                
+            <!-- Formulaire -->
+                <div class="col-sm-3 col-sm-pull-9">
+                    <h3>Les chats à adopter</h3>
+                    <form action="#" id="formulaire" class="form-horizontal contact">
+                        
+                <!--Sélection du chat-->
+                            <div id="selectCat" class="form-group">
+                                <label for="quelchat">Choix du chat :</label>
+                                    <select class="form-control" id="quelchat" name="quelchat">
+                                        <option value=""></option>
+                                        <option value="Sushi">Sushi</option>
+                                        <option value="Maki">Maki</option>
+                                        <option value="Sashimi">Sashimi</option>
+                                        <option value="Yakitori">Yakitori</option>
+                                        <option value="Onigri">Onigri</option>
+                                    </select>
+                            </div>
+                <!--Zone de texte pour raisons d'adoption du chat-->
+                            <div id="message" class="form-group">
+                                <label for="raisonschoix">Raison d'adoption</label>
+                                    <textarea class="form-control" rows="10" id="raisonschoix" placeholder="Saisissez ici les raisons pour lesquelles vous souhaitez adopter ce chat..."></textarea>
+                            </div>
+                <!-- Bouton d'Envoi -->
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-success btn-block"
+                                value="Envoyer">Envoyer</button>
+                            </div>
+                    </form>
+                </div><!--/.sm3 pull9-->
+
+            </div> <!--/.row-->
+        </div><!--/.container-->
+
+<!--Partie inférieure : Nos chats à adopter-->
+            
+        <div id="description">
+            <div class="container">
+                <div class="row">
+                <!--Partie article-->
+                    <div class="col-md-9">
+                        <h2>Nos chats à adopter...</h2>
+                        <p>
+                            Sed quid est quod in hac causa maxime homines admirentur et reprehendant meum consilium, cum ego idem antea multa decreverim, quae magis ad hominis dignitatem quam ad rei publicae necessitatem pertinerent? Supplicationem quindecim dierum decrevi sententia mea. Rei publicae satis erat tot dierum quot C. Mario ; dis immortalibus non erat exigua eadem gratulatio quae ex maximis bellis. Ergo ille cumulus dierum hominis est dignitati tributus.
+                        </p>
+                        <p>
+                            Haec igitur prima lex amicitiae sanciatur, ut ab amicis honesta petamus, amicorum causa honesta faciamus, ne exspectemus quidem, dum rogemur; studium semper adsit, cunctatio absit; consilium vero dare audeamus libere. Plurimum in amicitia amicorum bene suadentium valeat auctoritas, eaque et adhibeatur ad monendum non modo aperte sed etiam acriter, si res postulabit, et adhibitae pareatur.
+                        </p>
+                    </div><!--/col-md-9-->
+
+                <!--Image tête de chat-->
+                    <div class="col-md-3" id="teteChat">  
+                        <img src="assets/img/tete-chat.png" class="img-responsive" alt="Tête de chat">
+                    </div><!--/.col-md-3-->
+
+                </div><!--/.row-->
+            </div><!--/.container-->
+        </div><!--/#description .container-->
+            
+    </section>
+
+    <!-- --------------------------------------------------------------
+                     Pied de page
+    ---------------------------------------------------------------- -->
+    
+    <footer>
+        <p><i class="fa fa-copyright" aria-hidden="true"></i>OhMyCats !</p>
+    </footer>
+
+
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <!-- Mon Fichier JS -->
+    <script src="assets/js/js.js"></script>
+    
+</body>
+</html>
